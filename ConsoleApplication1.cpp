@@ -17,6 +17,7 @@ public:
     }
 };
 
+
 class ProductManagement {
 private:
     Node* head;
@@ -231,7 +232,7 @@ we would decrement the rear index from index 4 to index 3, indicating the remova
 
 5.
 a
-Based on the given sequence of numbers, the depth of the resulting tree will be 5. The depth of a BST is determined by the longest path from the root to any leaf node.
+Based on the given sequence of numbers, the depth is 4. The depth of a BST is determined by the longest path from the root to any leaf node.
 
 
 b.
