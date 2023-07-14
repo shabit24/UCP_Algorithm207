@@ -181,48 +181,64 @@ int main() {
     return 0;
 }
 
-//2.
-// Based on the given information that the front value is 10 at index 3 and the rear value is 15 at index 4, it indicates the use of a Queue data structure to manage data in the case study.
+/*
+2.
+Based on the given information that the front value is 10 at index 3 and the rear value is 15 at index 4, it indicates the use of a Queue data structure to manage data in the case study.
 
-// A Queue is a data structure that follows the First-In-First-Out (FIFO) principle, where elements are added to the rear of the queue and removed from the front. In the context of the case study, the front and rear values indicate the current positions of the front and rear elements in the queue.
-
-//3.
-// To solve the problem using a queue algorithm with arrays, we can follow these steps based on the given front and rear values:
-
-// *. Initialize the queue: Create an array of a fixed size to store the elements of the queue. Additionally, initialize the front and rear variables with their respective indices. In this case, front = 10 at index 3 and rear = 15 at index 4.
-
-// *. Enqueue operation: To add elements to the queue, increment the rear index by one and store the new element at that index in the array. In this case, we would enqueue new elements by incrementing the rear index to index 5 and storing the element 15 at that position.
-
-// *. Dequeue operation: To remove elements from the queue, increment the front index by one, effectively "removing" the element at that index. In this case, we would increment the front index from index 3 to index 4, indicating the removal of the element 10 from the front of the queue.
-
-// *. Handle circular behavior: Since the array is of a fixed size, we need to handle cases where the front or rear indices exceed the array boundaries. For example, if the rear index reaches the end of the array, we can wrap it around to the beginning by setting rear = (rear + 1) % arraySize. This ensures the circular behavior of the queue.
-
-// By following these steps and implementing the necessary operations with the given front and rear values, we can effectively solve the problem using a queue algorithm with arrays. This allows us to manage the queue, add new elements at the rear, remove elements from the front, and handle circular behavior when necessary.
-
-//4.
-// The given front and rear values (front = 10 at index 3 and rear = 15 at index 4) do not align with the typical usage of a Stack data structure. A Stack follows the Last-In-First-Out (LIFO) principle, where elements are added and removed from the same end of the stack.
-
-// In the case of the given front and rear values, they do not represent a valid configuration for a Stack. The front and rear values suggest a linear data structure rather than a stack-like behavior.
-
-// However, if we still wish to explore the usage of a stack algorithm with the provided values, we can consider the following approach:
-
-// *. Initialize the stack: Create an array of a fixed size to hold the elements of the stack. Initialize the stack with the given values of front and rear.
-
-// *. Push operation: To add elements to the stack, increment the rear index by one and store the new element at that index in the array. In this case, we would push new elements by incrementing the rear index to index 5 and storing the element 15 at that position.
-
-// *. Pop operation: To remove elements from the stack, decrement the rear index by one, effectively "removing" the element at that index. In this case, we would decrement the rear index from index 4 to index 3, indicating the removal of the element 15 from the stack.
+A Queue is a data structure that follows the First - In - First - Out(FIFO) principle, where elements are added to the rear of the queue and removed from the front.In the context of the case study,
+the front and rear values indicate the current positions of the front and rear elements in the queue.
 
 
-//5.
-//a
-// Based on the given sequence of numbers,  the depth of the resulting tree will be 5. The depth of a BST is determined by the longest path from the root to any leaf node.
+
+3.
+To solve the problem using a queue algorithm with arrays, we can follow these steps based on the given front and rear values :
+
+*.Initialize the queue : Create an array of a fixed size to store the elements of the queue.Additionally, initialize the front and rear variables with their respective indices.
+In this case, front = 10 at index 3 and rear = 15 at index 4.
+
+* .Enqueue operation : To add elements to the queue, increment the rear index by one and store the new element at that index in the array.
+In this case, we would enqueue new elements by incrementing the rear index to index 5 and storing the element 15 at that position.
+
+* .Dequeue operation : To remove elements from the queue, increment the front index by one, effectively "removing" the element at that index.In this case,
+we would increment the front index from index 3 to index 4, indicating the removal of the element 10 from the front of the queue.
+
+* .Handle circular behavior : Since the array is of a fixed size, we need to handle cases where the front or rear indices exceed the array boundaries.For example,
+if the rear index reaches the end of the array, we can wrap it around to the beginning by setting rear = (rear + 1) % arraySize.This ensures the circular behavior of the queue.
+
+By following these steps and implementing the necessary operations with the given front and rear values, we can effectively solve the problem using a queue algorithm with arrays.
+This allows us to manage the queue, add new elements at the rear, remove elements from the front, and handle circular behavior when necessary.
 
 
-//b.
-// To read the tree structure shown above, we can use one of the traversal methods: Inorder, Preorder, or Postorder. Let's consider the Preorder traversal method to read the tree:
 
-// Preorder Traversal:
-// 1. Visit the current node.
-// 2. Recursively traverse the left subtree.
-// 3. Recursively traverse the right subtree.
-//The Preorder traversal provides a sequence that visits the nodes in the order they would be encountered when traversing the tree in a depth-first manner.
+
+4.
+The given front and rear values(front = 10 at index 3 and rear = 15 at index 4) do not align with the typical usage of a Stack data structure.A Stack follows the Last - In - First - Out(LIFO) principle,
+where elements are added and removed from the same end of the stack.
+
+In the case of the given front and rear values, they do not represent a valid configuration for a Stack.The front and rear values suggest a linear data structure rather than a stack - like behavior.
+
+However, if we still wish to explore the usage of a stack algorithm with the provided values, we can consider the following approach :
+
+*.Initialize the stack : Create an array of a fixed size to hold the elements of the stack.Initialize the stack with the given values of front and rear.
+
+* .Push operation : To add elements to the stack, increment the rear index by one and store the new element at that index in the array.In this case,
+we would push new elements by incrementing the rear index to index 5 and storing the element 15 at that position.
+
+* .Pop operation : To remove elements from the stack, decrement the rear index by one, effectively "removing" the element at that index.In this case,
+we would decrement the rear index from index 4 to index 3, indicating the removal of the element 15 from the stack.
+
+
+
+5.
+a
+Based on the given sequence of numbers, the depth of the resulting tree will be 5. The depth of a BST is determined by the longest path from the root to any leaf node.
+
+
+b.
+To read the tree structure shown above, we can use one of the traversal methods : Inorder, Preorder, or Postorder.Let's consider the Preorder traversal method to read the tree:
+
+Preorder Traversal :
+1. Visit the current node.
+2. Recursively traverse the left subtree.
+3. Recursively traverse the right subtree.
+The Preorder traversal provides a sequence that visits the nodes in the order they would be encountered when traversing the tree in a depth - first manner.*/
