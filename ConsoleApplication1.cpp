@@ -184,10 +184,7 @@ int main() {
 
 /*
 2.
-Based on the given information that the front value is 10 at index 3 and the rear value is 15 at index 4, it indicates the use of a Queue data structure to manage data in the case study.
-
-A Queue is a data structure that follows the First - In - First - Out(FIFO) principle, where elements are added to the rear of the queue and removed from the front.In the context of the case study,
-the front and rear values indicate the current positions of the front and rear elements in the queue.
+Based on the given information Singly Linked List
 
 
 
